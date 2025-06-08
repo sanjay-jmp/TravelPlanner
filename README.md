@@ -43,23 +43,23 @@ Open your browser to http://localhost:3000
 
 ## Usage
 
--Enter number of days for your trip
--Add lists of locations and attractions
--Submit to get a day-wise travel itinerary
+- Enter number of days for your trip
+- Add lists of locations and attractions
+- Submit to get a day-wise travel itinerary
 
 ## Security
 
--Do NOT commit .env to GitHub
--.gitignore excludes .env to keep your API token safe
--Use .env.example to document required environment variables
+- Do NOT commit .env to GitHub
+- .gitignore excludes .env to keep your API token safe
+- Use .env.example to document required environment variables
 
 ## Contributing
 
--Contributions are welcome! Feel free to open issues or submit pull requests.
+- Contributions are welcome! Feel free to open issues or submit pull requests.
 
 ## License
 
--This project is licensed under the MIT License.
+- This project is licensed under the MIT License.
 
 # Happy traveling! ✈️
 
