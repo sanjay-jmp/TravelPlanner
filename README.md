@@ -1,12 +1,71 @@
-# React + Vite
+# TravelPlanner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TravelPlanner is a web app that helps users create personalized travel itineraries based on their preferred locations and attractions. It uses AI-powered suggestions from the Hugging Face API to generate day-wise travel plans tailored to user preferences.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Input preferred locations and attractions  
+- Specify number of travel days  
+- Receive AI-generated itineraries formatted in markdown  
+- Powered by the Mistral AI model from Hugging Face  
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** JavaScript (React + Vite)  
+- **Backend:** None — calls Hugging Face API directly from frontend  
+- **AI Model:** `mistralai/Mixtral-8x7B-Instruct-v0.1`  
+- **Config:** Environment variables managed via `.env`  
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed  
+- Hugging Face account with API token  
+
+### Installation
+
+Clone the repo:
+
+```bash
+git clone https://github.com/sanjay-jmp/TravelPlanner.git
+cd TravelPlanner
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Create a .env file with your API token:
+
+ini
+Copy
+Edit
+VITE_HF_ACCESS_TOKEN=your_hugging_face_api_token_here
+Start the dev server:
+
+bash
+Copy
+Edit
+npm run dev
+Open your browser to http://localhost:3000
+
+Usage
+Enter number of days for your trip
+
+Add lists of locations and attractions
+
+Submit to get a day-wise travel itinerary
+
+Security
+Do NOT commit .env to GitHub
+
+.gitignore excludes .env to keep your API token safe
+
+Use .env.example to document required environment variables
+
+Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+License
+This project is licensed under the MIT License.
